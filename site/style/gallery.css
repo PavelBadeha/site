@@ -86,15 +86,16 @@ nav .items .item::after {
 }
 
 .header::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #9d7bb2;
-  position: absolute;
-  top: 10%;
-  z-index: 1;
-  margin: 0 auto;
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: #9d7bb2;
+    position:absolute;
+    z-index: 1;
+    opacity: 1;
+    margin-top: 70px;
+    margin-left: 10%;
 }
 
 .circles {
@@ -152,6 +153,7 @@ nav .items .item::after {
   flex-wrap: wrap;
   margin-top: 30px;
   justify-content: center;
+  width: 100%;
 }
 
 .gallery .image {
