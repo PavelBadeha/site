@@ -10,7 +10,7 @@ a {
 }
 .wrapper {
   margin: 10px auto;
-  max-width: 1500px;
+  width: 100%;
 }
 .wrapper nav {
   display: flex;
@@ -151,30 +151,27 @@ nav .items .item::after {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  margin-left: 20px;
+  margin-left: 100px;
 }
 
 .gallery .image {
   padding: 0px;
-  width: calc(100% / 4);
+  width: calc(100% / 5);
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .gallery .image span {
   display: flex;
   width: 100%;
-  overflow: hidden;
-}
+  }
 
 .gallery .image img {
   width: 100%;
   vertical-align: middle;
-  transition: all 0.3s ease;
-  padding: 5px;
+  margin-top: 5px;
 }
 
-.gallery .image:hover img {
-  transform: scale(1.15);
-}
 
 .gallery .image.hide {
   display: none;

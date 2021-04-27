@@ -216,6 +216,10 @@ h1, h2, h3, h4{
 	transition: .3s linear;
 }
 
+.big {
+	transform: scale(2);
+}
+
 .slider_item:hover:after{
 	transform: scaleX(3);
 	opacity: 1;

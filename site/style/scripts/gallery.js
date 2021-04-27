@@ -1,8 +1,15 @@
 const filterItem = document.querySelector('.items');
 const filterImg = document.querySelectorAll('.image');
 
-		let filterName = [];
-		
+let filterName = [];
+const images = document.querySelectorAll('.big');
+
+images.forEach((image)=>{
+	console.log('1');
+		image.style.height ='100%';
+		image.style.width ='40%';	
+})
+
 window.onload = () =>{
     filterItem.onclick = (selectedItem)=>{
         if(selectedItem.target.classList.contains("item")){
