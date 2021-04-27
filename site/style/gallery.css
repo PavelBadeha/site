@@ -155,16 +155,15 @@ nav .items .item::after {
 }
 
 .gallery .image {
-  padding: 0px;
-  width: calc(100% / 5);
-  margin-left: 5px;
-  margin-right: 5px;
+  width: calc(100% / 4.2);
+  margin-right: 2px;
+  margin-left: 2px;
 }
 
 .gallery .image span {
   display: flex;
   width: 100%;
-  }
+}
 
 .gallery .image img {
   width: 100%;
