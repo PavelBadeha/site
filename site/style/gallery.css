@@ -2,7 +2,6 @@ body {
   font-size: 30px;
   font-family: Chiro, sans-serif;
   padding: 10px;
-  cursor: pointer;
 }
 
 a {
@@ -42,10 +41,7 @@ nav .items .item {
 }
 
 .cactive {
-  background-size: 40px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("./images//bw.png");
+  background-color: #000;
 }
 
 nav .items .active,
@@ -118,13 +114,14 @@ nav .items .item::after {
 }
 
 .circle {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   margin-left: 5px;
   margin-right: 5px;
   border: 4px solid #000;
   border-radius: 100px;
   cursor: pointer;
+  transition: all .3s ease;
 }
 
 .colorful {
