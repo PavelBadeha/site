@@ -1,15 +1,8 @@
-const name = document.querySelectorAll('form > div > *');
+let mainFilters = document.querySelector(".slider");
 
-
-const sumbit = document.querySelector(".footer_btn");
-
-sumbit.addEventListener('click', hi);
-
-function hi(){
-	let message = '';
-	name.forEach(element => {
-		message += "\n" + element.value;
-	});
-
-	alert("Your message:" + message);
+export let data = '';
+if(mainFilters !=null){
+		mainFilters.onclick = (mFilter) =>{
+		data = mFilter.target.getAttribute('data');
+	}
 }

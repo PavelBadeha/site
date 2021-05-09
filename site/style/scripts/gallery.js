@@ -3,19 +3,31 @@ const filterImg = document.querySelectorAll('.image');
 const sizeItem = document.querySelector('.sizes');
 const circleItem = document.querySelector('.circles');
 
+
 let colorFilter = 'any';
 let sizeFilter = 'any';
 let filterSize = [];
 let filterName = [];
 const images = document.querySelectorAll('.big');
+let mainFilter = document.querySelector('.slider');
 
 images.forEach((image)=>{
 		image.style.height ='100%';
 		image.style.width ='40%';	
 })
-
+FindAllFilters();
+filterImg.forEach((image)=>{
+	if((sizeFilter == 'any' || sizeFilter == image.getAttribute('size')) 
+						&& (filterName == "All" || isType(image))
+						&& (colorFilter == 'any' || colorFilter == image.getAttribute('color'))){
+		image.classList.remove("hide");
+		image.classList.add("show");
+	}else{
+		image.classList.add("hide");
+		image.classList.remove("show");
+	}
+});
 window.onload = () =>{
-	
 	circleItem.onclick = (selectedCircle) =>{
 		if(selectedCircle.target.classList.contains("circle")){
 			if(!selectedCircle.target.classList.contains('cactive')){

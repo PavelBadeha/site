@@ -8,6 +8,7 @@ a {
   text-decoration: none;
   color: #000;
 }
+
 .wrapper {
   margin: 10px auto;
   width: 100%;
@@ -86,7 +87,20 @@ nav .items .item::after {
   font-size: 40px;
   color: #9d7bb2;
   margin: 0 auto;
-  margin-left: 45%;
+  margin-left: 31%;
+}
+
+.backBtn{
+  font-size: 30px;
+  color: #000;
+  margin-left: 10%;
+  margin-top: 25px;
+  transition: all .3s ease;
+  position: relative;
+}
+
+.backBtn:hover{
+  color: #9d7bb2;
 }
 
 .header::after {
